@@ -1,0 +1,150 @@
+@import url(./colors.less);
+
+body {
+    font-family: 'Museo Sans 500', sans-serif;
+    font-style: normal;
+}
+
+a {
+    cursor: pointer;
+    &:active{
+        outline: colors[active] solid 2px!important;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #colors[header];
+
+    i{
+        color: #colors[white];
+    }
+}
+
+.top-header-block {
+    background-color: #colors[topheader];
+    padding: 0 10px;
+}
+
+.top-header-main {
+    padding: 0 10px;
+    nav {
+        float: right;
+
+        li{
+            display: inline-block;
+            &:not(.noborder)::after {
+                content: ' ';
+                position: absolute;
+                display: inline-block;
+                width: 1px;
+                height: 13px;
+                border-left: 1px dotted rgb(185 185 185);
+                right: -4px;
+                top: 25px; 
+            }
+        }
+
+        ul{
+            height: 100%;
+            line-height: 60px;
+
+            li{
+                position: relative;
+                a{
+                    display: inline-block;
+                    height: 100%;
+                    padding: 0 6px;
+                    &:hover{
+                        box-shadow: 0 3px 0 rgb(239 38 54);
+                        background-color: rgba(0, 0, 0, .25);
+                    }
+                }
+            }
+            span{
+                color: #colors[white];
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.menu-list {
+    display: block;
+    float: right;
+
+    li {
+    display: inline-block;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+.top-menu-list li {
+    padding: 5px 8px;
+    position: relative;
+
+    a:hover span {
+    color: #colors[ahoverspan];
+    }
+
+    &::after{
+        content: ' ';
+        position: absolute;
+        display: inline-block;
+        width: 1px;
+        height: 18px;
+        border-left: 1px dotted red;
+        right: 0px;
+        top: 5px;
+    }
+    &:last-child::after {
+        content: none;
+    }
+    
+    span {
+        color: #C3CBD7;
+        font-size: 11px;
+    }
+}
+
+.logo-link {
+    height: 60px;
+    display: inline-block;
+    padding: 12px 5px;
+}
+
+.headerlogo {
+    height: 100%;
+}
+
+.btn {
+    .btn-login{
+        background: transparent;
+        border: 1px solid #fbf6f6;
+        padding: 6px;
+        border-radius: 14px;
+            &:hover {
+            background-color: rgba(255, 255, 255, .15);
+            border-color: rgba(255, 255, 255, 1);
+            }
+    }
+    cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+    width: 26px;
+    height: 25px;
+    background-image: url(./Images/icons.png);
+    background-size: 150px 150px;
+    .user-icon {
+        background-position: 128px -101px;
+    }
+}
