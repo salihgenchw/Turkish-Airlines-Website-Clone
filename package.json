@@ -18,5 +18,8 @@
   "homepage": "https://github.com/salihgenchw/Turkish-Airlines-Website-Clone#readme",
   "devDependencies": {
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-less": "^5.0.0"
   }
 }
