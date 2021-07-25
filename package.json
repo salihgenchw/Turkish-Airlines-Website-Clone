@@ -1,7 +1,7 @@
 {
   "name": "thy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Used technologies;",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +16,10 @@
     "url": "https://github.com/salihgenchw/Turkish-Airlines-Website-Clone/issues"
   },
   "homepage": "https://github.com/salihgenchw/Turkish-Airlines-Website-Clone#readme",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0"
+  },
+  "dependencies": {},
+  "keywords": []
 }
