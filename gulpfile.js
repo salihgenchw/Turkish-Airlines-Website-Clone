@@ -7,4 +7,6 @@ gulp.task("lesstocss", function () {
   return gulp.src(srcfile).pipe(gulpless()).pipe(gulp.dest(temp));
 });
 
-
+gulp.task ('lessizle', function () {
+  gulp.watch("./less/**/*.less",gulp.series('lesstocss'))
+})
