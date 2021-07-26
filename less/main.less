@@ -205,14 +205,44 @@ section {
 }
 
 .searchfly {
+    margin: auto;
     padding: 10px 2em;
     background-color: rgba(35,43,55,.6);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 938px;
-    height: 200px;
-    
+    width: 938px;  // silinecek
+    height: 175px;  // silinecek
+}
 
+.bookermenu {
 
+    a{
+        text-decoration: none;
+        color: #colors[white];
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding: 10px;
+
+        &:first-child {
+            border-bottom: 3px solid #colors[thyred];
+        }
+        
+        &:last-child{
+            float: right;
+        }
+
+        &::before {
+            content:"";
+            width: 11px;
+            height: 11px;
+            background-color: #fff;
+            border: 3px solid #fff;
+            border-radius: 2px;
+            position: relative;
+            display: inline-block;
+            box-shadow: 0 0 1px #000;
+            border-radius: 50%;
+            margin-right: 5px;
+            vertical-align: bottom;
+        }     
+    }
 }

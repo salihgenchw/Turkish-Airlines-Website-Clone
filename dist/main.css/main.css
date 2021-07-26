@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Museo Sans 500';
   src: url('./fonts/MuseoSans-500Italic.eot');
   src: url('./fonts/MuseoSans-500Italic.eot?#iefix') format('embedded-opentype'), url('./fonts/MuseoSans-500Italic.woff2') format('woff2'), url('./fonts/MuseoSans-500Italic.woff') format('woff');
@@ -23,6 +30,11 @@
   font-family: "Museo Sans 100";
   src: url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.eot");
   src: url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.woff") format("woff"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.svg#Museo Sans 100") format("svg");
+}
+@font-face {
+  font-family: "font700";
+  src: url("../fonts/700.ttf") format("truetype");
+  font-weight: 700;
 }
 body {
   font-family: 'Museo Sans 500', sans-serif;
@@ -199,11 +211,37 @@ section {
   background-color: #E81932;
 }
 .searchfly {
+  margin: auto;
   padding: 10px 2em;
   background-color: rgba(35, 43, 55, 0.6);
-  position: absolute;
-  display: flex;
-  justify-content: center;
   width: 938px;
-  height: 200px;
+  height: 175px;
+}
+.bookermenu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding: 10px;
+}
+.bookermenu a:first-child {
+  border-bottom: 3px solid #E81932;
+}
+.bookermenu a:last-child {
+  float: right;
+}
+.bookermenu a::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 0 1px #000;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: bottom;
 }
