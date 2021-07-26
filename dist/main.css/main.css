@@ -217,6 +217,9 @@ section {
   width: 938px;
   height: 175px;
 }
+.bookermenu {
+  height: 40px;
+}
 .bookermenu a {
   text-decoration: none;
   color: #fff;
@@ -244,4 +247,25 @@ section {
   border-radius: 50%;
   margin-right: 5px;
   vertical-align: bottom;
+}
+.port-select-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1) inset;
+  border: 1px solid #ccc;
+  height: 83px;
+  max-width: 264px;
+}
+.port-select-wrapper img {
+  width: 36px;
+  margin: 29px 12px;
+}
+.port input {
+  height: 100%;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  max-width: 200px;
 }
