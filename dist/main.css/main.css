@@ -251,11 +251,10 @@ section {
 .port-select-wrapper {
   position: relative;
   margin-bottom: 15px;
-  display: flex;
+  display: inline-block;
   background-color: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1) inset;
   border: 1px solid #ccc;
-  height: 83px;
   max-width: 264px;
 }
 .port-select-wrapper img {
