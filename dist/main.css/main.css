@@ -19,6 +19,11 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Museo Sans 100";
+  src: url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.eot");
+  src: url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.woff") format("woff"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.svg#Museo Sans 100") format("svg");
+}
 body {
   font-family: 'Museo Sans 500', sans-serif;
   font-style: normal;
@@ -146,4 +151,30 @@ header i {
 }
 .user-icon {
   background-position: 128px -101px;
+}
+section {
+  background-image: url("https://cdn.turkishairlines.com/m/3c9fb6f3e9aefa19/original/1400x600-bookerv2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+}
+.Merhaba {
+  display: flex;
+  justify-content: center;
+}
+.Merhaba span {
+  font-family: "Museo Sans 100";
+  margin-top: 30px;
+  color: white;
+  font-size: 2.5rem;
+}
+.Merhaba2 {
+  display: flex;
+  justify-content: center;
+}
+.Merhaba2 span {
+  font-family: "Museo Sans 100";
+  color: white;
+  font-size: 2rem;
 }
