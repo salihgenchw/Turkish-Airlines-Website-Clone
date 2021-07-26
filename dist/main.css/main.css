@@ -127,13 +127,13 @@ header i {
 .btn {
   cursor: pointer;
 }
-.btn .btn-login {
+.btn-login {
   background: transparent;
   border: 1px solid #fbf6f6;
   padding: 6px;
   border-radius: 14px;
 }
-.btn .btn-login:hover {
+.btn-login:hover {
   background-color: rgba(255, 255, 255, 0.15);
   border-color: #ffffff;
 }
@@ -144,6 +144,6 @@ header i {
   background-image: url(./Images/icons.png);
   background-size: 150px 150px;
 }
-.icon .user-icon {
+.user-icon {
   background-position: 128px -101px;
 }
