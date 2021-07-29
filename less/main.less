@@ -62,8 +62,7 @@ header {
                     padding: 0 6px;
                     &:hover{
                         box-shadow: 0 3px 0 rgb(239 38 54);
-                        background-color: rgba(0, 0, 0, .25);
-                        
+                        background-color: rgba(0, 0, 0, .25);   
                     }
                 }
             }
@@ -249,6 +248,10 @@ section {
     }
 }
 
+.kapsayicidiv {
+    display: flex;
+}
+
 .port-select-wrapper {
     position: relative;
     margin-bottom: 15px;
@@ -274,5 +277,22 @@ section {
         font-weight: bold;
         max-width: 200px;
     }
+}
+
+.date {
+    display: inline-block;
+    background-color:#232b38;
+    width: 148px;
+    height: 92px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+            span{
+                font-size: 1.4rem;
+                color: #colors[white];
+                font-weight: bold;
+            } 
 }
 
